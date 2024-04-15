@@ -1,0 +1,10 @@
+version: '3'
+services:
+  fiftyone:
+    image: voxel51/fiftyone
+    ports:
+      - "5151:5151"
+    volumes:
+      - ${SHARED_DIR}:/fiftyone
+    tty: true
+    stdin_open: true
